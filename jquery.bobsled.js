@@ -16,7 +16,7 @@
                 
                 c : {
                     direction : ['before', 'after'],
-                    numbers   : ['one', 'two'],
+                    numbers   : ['one', 'two', 'three'],
                     active    : 'active'
                 },
                 
@@ -41,7 +41,7 @@
                 if (options.timer !== undefined) clearTimeout(options.timer);
                                 
                 options.timer = setTimeout(function () {
-                    options.activeFrame = (options.activeFrame == count - 1) ? 0 : options.activeFrame + 1;
+                    options.activeFrame = (options.activeFrame >= count - 1) ? 0 : options.activeFrame + 1;
                     
                     setOffset();
                     setupTimer();
@@ -57,7 +57,7 @@
             setupTimer();
             
             
-            $(options.select.frame, this).click (function() { 
+            $(options.select.frame, this).click (function() {                 
                 options.activeFrame = $(this).index();
                 setOffset();
                 setupTimer();
@@ -81,13 +81,17 @@
                     
                     $(this).removeClass(options.c.direction.join(' ') + ' ' + options.c.numbers.join(' ') + ' ' + options.c.active);
                 
+                    if (position ==  0) $(this).addClass(options.c.active); 
+                    
+                    
                     if (position == -1) $(this).addClass(options.c.direction[0] + ' ' + options.c.numbers[0]); 
                     if (position ==  1) $(this).addClass(options.c.direction[1] + ' ' + options.c.numbers[0]); 
                     
-                    if (position ==  0) $(this).addClass(options.c.active); 
+                    if (position == -2) $(this).addClass(options.c.direction[0] + ' ' + options.c.numbers[1]); 
+                    if (position ==  2) $(this).addClass(options.c.direction[1] + ' ' + options.c.numbers[1]); 
                     
-                    if (position <= -2) $(this).addClass(options.c.direction[0] + ' ' + options.c.numbers[1]);
-                    if (position >=  2) $(this).addClass(options.c.direction[1] + ' ' + options.c.numbers[1]);
+                    if (position <= -3) $(this).addClass(options.c.direction[0] + ' ' + options.c.numbers[2]);
+                    if (position >=  3) $(this).addClass(options.c.direction[1] + ' ' + options.c.numbers[2]);
                 });
                 
                 
