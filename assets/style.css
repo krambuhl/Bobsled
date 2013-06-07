@@ -1,0 +1,439 @@
+/* line 5, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, scss/style/_base.scss */
+body {
+  background: white;
+  color: #333333;
+  text-transform: none;
+  text-decoration: none;
+  text-align: left;
+  word-wrap: normal;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: Arial, Helvetica, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: #eeccb7;
+}
+
+/* line 23, scss/style/_base.scss */
+::selection {
+  background: #eeccb7;
+}
+
+/* line 24, scss/style/_base.scss */
+::-moz-selection {
+  background: #eeccb7;
+}
+
+/* line 25, scss/style/_base.scss */
+img::selection {
+  background: #eeccb7;
+}
+
+/* line 26, scss/style/_base.scss */
+img::-moz-selection {
+  background: #eeccb7;
+}
+
+/* line 30, scss/style/_base.scss */
+a {
+  color: #333333;
+  border-bottom: 1px dotted #333333;
+  text-decoration: none;
+}
+
+/* line 31, scss/style/_base.scss */
+a:hover {
+  color: #333333;
+  border-bottom: 1px solid #333333;
+}
+
+/* line 32, scss/style/_base.scss */
+a:active {
+  color: #333333;
+  border-bottom: 1px solid #333333;
+}
+
+/* line 34, scss/style/_base.scss */
+em, cite {
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* line 35, scss/style/_base.scss */
+hr {
+  display: none;
+}
+
+/* line 41, scss/style/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(assets/library/boxsizing.htc);
+}
+
+/* line 43, scss/style/_base.scss */
+.left {
+  float: left;
+}
+
+/* line 44, scss/style/_base.scss */
+.right {
+  float: right;
+}
+
+/* line 46, scss/style/_base.scss */
+.block {
+  display: block;
+}
+
+/* line 47, scss/style/_base.scss */
+.inline {
+  display: inline-block;
+}
+
+/* line 49, scss/style/_base.scss */
+.relative {
+  position: relative;
+}
+
+/* line 50, scss/style/_base.scss */
+.absolute {
+  position: absolute;
+}
+
+/* line 51, scss/style/_base.scss */
+.fixed {
+  position: fixed;
+}
+
+/* line 53, scss/style/_base.scss */
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 1, scss/style/modules/_bobsled.scss */
+.bobsled {
+  position: relative;
+  width: 100%;
+  height: 536px;
+  margin-top: 96px;
+  overflow: hidden;
+  background: #dfdfdf;
+}
+/* line 11, scss/style/modules/_bobsled.scss */
+.bobsled * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(assets/library/boxsizing.htc);
+}
+
+/* line 19, scss/style/modules/_bobsled.scss */
+.bobsled-nav {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  bottom: 0;
+  z-index: 2;
+  background: #3b3f3e;
+}
+/* line 28, scss/style/modules/_bobsled.scss */
+.bobsled-nav:after {
+  content: '\0020';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  z-index: 3;
+  border-top: 1px solid #66716d;
+  background: #495551;
+}
+/* line 41, scss/style/modules/_bobsled.scss */
+.bobsled-nav > ul {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+  height: 36px;
+  z-index: 4;
+}
+
+/* line 51, scss/style/modules/_bobsled.scss */
+.bobsled-nav-item {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+/* line 56, scss/style/modules/_bobsled.scss */
+.bobsled-nav-item > a {
+  float: left;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-decoration: none;
+}
+/* line 65, scss/style/modules/_bobsled.scss */
+.bobsled-nav-item > a > * {
+  -webkit-transition-property: background-color, color, opacity;
+  -moz-transition-property: background-color, color, opacity;
+  -o-transition-property: background-color, color, opacity;
+  transition-property: background-color, color, opacity;
+  -webkit-transition-duration: 0.5s, 0.75s, 2s;
+  -moz-transition-duration: 0.5s, 0.75s, 2s;
+  -o-transition-duration: 0.5s, 0.75s, 2s;
+  transition-duration: 0.5s, 0.75s, 2s;
+  -webkit-transition-timing-function: linear, linear, ease;
+  -moz-transition-timing-function: linear, linear, ease;
+  -o-transition-timing-function: linear, linear, ease;
+  transition-timing-function: linear, linear, ease;
+}
+
+/* line 73, scss/style/modules/_bobsled.scss */
+.bobsled-nav-text {
+  float: left;
+  width: 100%;
+  height: 30px;
+  padding: 9px 0;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* line 88, scss/style/modules/_bobsled.scss */
+.bobsled-nav-progress {
+  position: relative;
+  float: left;
+  height: 6px;
+  width: 100%;
+  background-color: transparent;
+}
+
+/* line 98, scss/style/modules/_bobsled.scss */
+.bobsled-progressbar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 0%;
+  height: 6px;
+  background: #009edf;
+}
+
+/* line 115, scss/style/modules/_bobsled.scss */
+.bobsled-content {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  z-index: 1;
+}
+/* line 122, scss/style/modules/_bobsled.scss */
+.bobsled-content > ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 129, scss/style/modules/_bobsled.scss */
+.bobsled-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 137, scss/style/modules/_bobsled.scss */
+.bobsled-slide-content {
+  position: absolute;
+  left: 50%;
+  width: 960px;
+  padding: 48px 0;
+  margin-left: -480px;
+  -webkit-transition-property: opacity, left;
+  -moz-transition-property: opacity, left;
+  -o-transition-property: opacity, left;
+  transition-property: opacity, left;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+/* line 150, scss/style/modules/_bobsled.scss */
+.bobsled-slide-background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 536px;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 162, scss/style/modules/_bobsled.scss */
+.bobsled-slide-background > img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* line 169, scss/style/modules/_bobsled.scss */
+  .bobsled-slide-background > img {
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    width: auto;
+    height: 100%;
+  }
+}
+/* line 181, scss/style/modules/_bobsled.scss */
+.bobsled-slide-stage-after .bobsled-slide-content,
+.bobsled-slide-inactive .bobsled-slide-content {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  left: 70%;
+}
+/* line 182, scss/style/modules/_bobsled.scss */
+.bobsled-slide-stage-after .bobsled-slide-background,
+.bobsled-slide-inactive .bobsled-slide-background {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+/* line 186, scss/style/modules/_bobsled.scss */
+.bobsled-slide-active .bobsled-slide-content {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  left: 50%;
+}
+/* line 187, scss/style/modules/_bobsled.scss */
+.bobsled-slide-active .bobsled-slide-background {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 192, scss/style/modules/_bobsled.scss */
+.bobsled-slide-stage-before .bobsled-slide-content,
+.bobsled-slide-complete .bobsled-slide-content {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  left: 15%;
+}
+/* line 193, scss/style/modules/_bobsled.scss */
+.bobsled-slide-stage-before .bobsled-slide-background,
+.bobsled-slide-complete .bobsled-slide-background {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+/* line 198, scss/style/modules/_bobsled.scss */
+.bobsled-slide-header {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* line 206, scss/style/modules/_bobsled.scss */
+.bobsled-slide-content p {
+  line-height: 1.6em;
+  width: 50%;
+}
+
+/* line 213, scss/style/modules/_bobsled.scss */
+.bobsled-nav-active .bobsled-nav-text {
+  color: #009edf;
+}
+
+/* line 218, scss/style/modules/_bobsled.scss */
+.bobsled-nav-stage-after .bobsled-nav-text,
+.bobsled-nav-complete .bobsled-nav-text {
+  color: #cbd7d6;
+}
+/* line 219, scss/style/modules/_bobsled.scss */
+.bobsled-nav-stage-after .bobsled-nav-progress,
+.bobsled-nav-complete .bobsled-nav-progress {
+  background-color: #a2abaa;
+}

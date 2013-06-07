@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+	<title>Bobsled</title>
+	<meta name="description" content="" />
+	<meta name="author"      content="" />
+	<meta name="viewport"    content="width=device-width, initial-scale=1"/>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+	<!--[if lt IE 9]>
+		<script src="assets/library/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- library scripts / @font-face -->
+	<script src="assets/jquery.min.js"></script>
+	<script src="assets/jquery.touchSwipe.js"></script>
+
+	<!-- user scripts / style -->
+	<link  href="assets/style.css" rel="stylesheet" />
+	<script src="assets/script.js"></script>
+
+	<!-- bobsled plugin -->
+	<script src="jquery.bobsled.js"></script>
+	<script>
+		$(window).ready( function () { 
+			$('.bobsled').bobsled({});
+		});
+	</script>
+</head>
+
+<body>
+
+<div class="bobsled">
+	<nav class="bobsled-nav"><ul>
+		<li class="bobsled-nav-item"><a href="#/">
+			<span class="bobsled-nav-text">Devon Harris</span>
+			<div  class="bobsled-nav-progress"></div>
+		</a></li>
+
+		<li class="bobsled-nav-item"><a href="#/">
+			<span class="bobsled-nav-text">Dudley Stokes</span>
+			<div  class="bobsled-nav-progress"></div>
+		</a></li>
+
+		<li class="bobsled-nav-item"><a href="#/">
+			<span class="bobsled-nav-text">Michael White</span>
+			<div  class="bobsled-nav-progress"></div>
+		</a></li>
+
+		<div class="bobsled-progressbar"></div>
+	</ul></nav>
+
+	<section class="bobsled-content"><ul>
+		<li class="bobsled-slide">
+			<div class="bobsled-slide-content">
+				<h2 class="bobsled-slide-header">Devon Harris</h2>
+				<p>Aliquip enim short ribs.</p>
+			</div>
+
+			<div class="bobsled-slide-background"><img src="assets/images/logo-1.png" /></div>
+		</li>
+
+		<li class="bobsled-slide">
+			<div class="bobsled-slide-content">
+				<h2 class="bobsled-slide-header">Dudley Stokes</h2>
+				<p>Ribeye officia, sunt laborum shankle. </p>
+			</div>
+
+			<div class="bobsled-slide-background"><img src="assets/images/logo-2.png" /></div>
+		</li>
+
+		<li class="bobsled-slide">
+			<div class="bobsled-slide-content">
+				<h2 class="bobsled-slide-header">Michael White</h2>
+				<p>Speck capicola tempor, cillum.</p>
+			</div>
+
+			<div class="bobsled-slide-background"><img src="assets/images/logo-3.png" /></div>
+		</li>
+	</ul></section>
+</div>
+
+</body>
+</html>
